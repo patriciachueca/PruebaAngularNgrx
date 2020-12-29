@@ -1,4 +1,4 @@
-/* import { ShoppingActionTypes, ShoppingAction } from '../actions/shopping.actions';
+import { ShoppingActionTypes, ShoppingAction } from '../actions/shopping.actions';
 import { ShoppingItem } from '../models/shopping-item.model';
 
 //El reducer toma parte en gestionar el paso de State X a State Y
@@ -17,4 +17,4 @@ export function ShoppingReducer(state: Array<ShoppingItem> = initialState, actio
         default:
             return state;
     }
-} */
+}
