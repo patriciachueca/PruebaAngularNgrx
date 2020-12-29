@@ -10,6 +10,9 @@ const initialState: Array<ShoppingItem> = [
     }
 ];
 
+//El reducer tiene 2 parámetros, 
+    //state: Estado actual
+    //action: Acción para cambiar el estado
 export function ShoppingReducer(state: Array<ShoppingItem> = initialState, action: ShoppingAction) {
     switch (action.type) {
         case ShoppingActionTypes.ADD_ITEM:
