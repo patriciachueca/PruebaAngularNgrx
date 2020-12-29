@@ -15,6 +15,7 @@ const initialState: Array<ShoppingItem> = [
     //action: Acción para cambiar el estado
 export function ShoppingReducer(state: Array<ShoppingItem> = initialState, action: ShoppingAction) {
     switch (action.type) {
+        // si la accion es añadir item, devuelve todos los action anteriores y le añades el payload al final
         case ShoppingActionTypes.ADD_ITEM:
             return [...state, action.payload];
         default:
